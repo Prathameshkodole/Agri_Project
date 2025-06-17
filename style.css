@@ -3390,3 +3390,61 @@ border-radius: 12%;
 .menu-bar li a:hover {
   color: green;
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+  }
+  .container, .main, .content {
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+    word-break: break-word;
+  }
+  nav, .sidebar {
+    width: 100%;
+    float: none;
+  }
+  /* Add more selectors as needed for your layout */
+}
+
+/* Use relative units for padding, margin, font-size, etc. */
+
+
+/* Mobile: Scale down entire page but keep layout the same */
+@media (max-width: 768px) {
+  .home .div {
+    transform: scale(0.3);       /* Scale entire content to 50% */
+    transform-origin: top left;  /* Anchor scaling from top-left */
+    width: 50%;                 /* Compensate for scale shrink */
+  }
+
+  body {
+    overflow-x: auto;           /* Allow horizontal scrolling if needed */
+  }
+}
+
+
+
+/* Mobile view: scale down layout to look like desktop */
+@media (max-width: 768px) {
+  .home .div {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200%;
+  }
+
+  body {
+    overflow-x: auto;
+  }
+}
