@@ -1,3 +1,23 @@
+
+.about {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.about .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 4439.59px;
+  position: relative;
+}
+
+body {
+  min-width: 1920px;
+  overflow-x: auto;
+}
 .about {
   background-color: #ffffff;
   display: flex;
